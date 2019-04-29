@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/study_main.css') }}">
+
+</head>
+<body>
+
+  <h1>JS - Momentum</h1>
+
+  <div class="js-clock">
+    <h1 class="js-clock-time"> </h1>
+  </div>
+
+  <!-- class name of 'js-form' is for using at js file -->
+  <!-- and class name of 'form' is for using at css file -->
+  <form class="js-form form">
+    <input type="text" class="js-input-name" placeholder="What is you name?"/>
+  </form>
+
+  <h4 class="js-greetings greetings"></h4>
+
+  <form class="js-toDoForm">
+    <input class="js-toDoInput" type="text" placeholder="Write a to do" />
+  </form>
+
+  <ul class="js-toDoList"></ul>
+  <span class="js-weather"></span>
+
+  <script type="text/javascript" src="{{url_for('static', filename='js/js_momentum_Clock.js')}}"></script>
+  <script type="text/javascript" src="{{url_for('static', filename='js/js_momentum_Greeting.js')}}"></script>
+  <script type="text/javascript" src="{{url_for('static', filename='js/js_momentum_ToDoList.js')}}"></script>
+  <script type="text/javascript" src="{{url_for('static', filename='js/js_momentum_Background.js')}}"></script>
+  <script type="text/javascript" src="{{url_for('static', filename='js/js_momentum_Weather.js')}}"></script>
+
+</body>
+</html>

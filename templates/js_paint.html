@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>JS - Paint</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/paint_style.css') }}">
+
+</head>
+<body>
+
+  <canvas id="js-canvas" class="canvas"></canvas>
+
+  <div class="controls" id="js-controls">
+    <div class="controls__range">
+      <input type="range" id="js-range" min="0.1" max="5.0" value="2.5" step="0.1">
+    </div>
+    <div class="controls__btns">
+      <button id="jsMode">Fill </button>
+      <button id="jsSave">Save</button>
+    </div>
+    <div class="controls__colors" id="js-controls-color">
+      <div class="controls__color" style="background-color: black"></div>
+      <div class="controls__color" style="background-color: white"></div>
+      <div class="controls__color" style="background-color: red"></div>
+      <div class="controls__color" style="background-color: orange"></div>
+      <div class="controls__color" style="background-color: yellow"></div>
+      <div class="controls__color" style="background-color: green"></div>
+      <div class="controls__color" style="background-color: skyblue"></div>
+      <div class="controls__color" style="background-color: blue"></div>
+      <div class="controls__color" style="background-color: purple"></div>
+    </div>
+  </div>
+
+  <script type="text/javascript" src="{{url_for('static', filename='js/js_paint.js')}}"></script> 
+</body>
+</html>
